@@ -1,6 +1,6 @@
 # Dapper Practice With .NetCore WebAPI
 
-we have 2 entity Company,Employee with One to Many relation
+We have 2 entity Company,Employee with One to Many relation
 
 Dapper Practice
 
