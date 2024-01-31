@@ -334,3 +334,480 @@
 2024-01-30 06:15:58.5520 Debug FileTarget(Name=logfile): Preparing for new file: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt'
 2024-01-30 06:15:58.5660 Debug FileTarget(Name=logfile): Creating file appender: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt'
 2024-01-30 06:15:58.5660 Trace FileTarget(Name=logfile): Opening D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt with allowFileSharedWriting=False
+2024-01-30 23:31:55.5573 Debug Message Template Auto Format enabled
+2024-01-30 23:31:55.6449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6449 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:31:55.6449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6449 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:31:55.6449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6449 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:31:55.6449 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6449 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:31:55.6449 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-30 23:31:55.6449 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-30 23:31:55.6449 Trace ParseRulesElement
+2024-01-30 23:31:55.6790 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-30 23:31:55.6790 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-30 23:31:55.6790 Debug --- NLog configuration dump ---
+2024-01-30 23:31:55.6790 Debug Targets:
+2024-01-30 23:31:55.6790 Debug FileTarget(Name=logfile)
+2024-01-30 23:31:55.6790 Debug Rules:
+2024-01-30 23:31:55.6790 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-30 23:31:55.6790 Debug --- End of NLog configuration dump ---
+2024-01-30 23:31:55.6790 Trace FindReachableObject<System.Object>:
+2024-01-30 23:31:55.6790 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-30 23:31:55.6790 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-30 23:31:55.6790 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-30 23:31:55.6790 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-30 23:31:55.6790 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-30 23:31:55.6790 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:31:55.6790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6790 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:31:55.6790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6790 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-30 23:31:55.6790 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-30 23:31:55.6790 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:31:55.6790 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:31:55.6790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6790 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:31:55.6790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6790 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:31:55.6790 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-30 23:31:55.6790 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-30 23:31:55.6790 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-30 23:31:55.6909 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-30 23:31:55.6909 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${message}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${level}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${longdate}
+2024-01-30 23:31:55.6909 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-30 23:31:55.6909 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6909 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-30 23:31:55.6909 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:31:55.6909 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:31:55.6909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6909 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:31:55.6909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6909 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-30 23:31:55.6909 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:31:55.6909 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-30 23:31:55.6909 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:31:55.6909 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-30 23:31:55.6909 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:31:55.6909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6909 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:31:55.6909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:31:55.6909 Trace Initializing FileTarget(Name=logfile)
+2024-01-30 23:31:55.6909 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-30 23:31:55.6909 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-30 23:31:55.6909 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-30 23:31:55.6909 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-30 23:31:55.6909 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-30 23:31:55.6909 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-30 23:31:55.6909 Info Configuration initialized.
+2024-01-30 23:34:55.1971 Debug Message Template Auto Format enabled
+2024-01-30 23:34:55.2374 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2387 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:34:55.2387 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2387 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:34:55.2387 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2387 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:34:55.2387 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2387 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:34:55.2387 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-30 23:34:55.2387 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-30 23:34:55.2387 Trace ParseRulesElement
+2024-01-30 23:34:55.2387 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-30 23:34:55.2542 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-30 23:34:55.2542 Debug --- NLog configuration dump ---
+2024-01-30 23:34:55.2542 Debug Targets:
+2024-01-30 23:34:55.2542 Debug FileTarget(Name=logfile)
+2024-01-30 23:34:55.2542 Debug Rules:
+2024-01-30 23:34:55.2542 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-30 23:34:55.2542 Debug --- End of NLog configuration dump ---
+2024-01-30 23:34:55.2542 Trace FindReachableObject<System.Object>:
+2024-01-30 23:34:55.2542 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-30 23:34:55.2542 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-30 23:34:55.2542 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-30 23:34:55.2542 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-30 23:34:55.2542 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-30 23:34:55.2542 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:34:55.2542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2542 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:34:55.2542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2542 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-30 23:34:55.2542 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-30 23:34:55.2542 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:34:55.2542 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:34:55.2542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2542 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:34:55.2542 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2542 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:34:55.2542 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-30 23:34:55.2542 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-30 23:34:55.2542 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-30 23:34:55.2542 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-30 23:34:55.2542 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-30 23:34:55.2542 Trace Initializing Layout Renderer: ${message}
+2024-01-30 23:34:55.2542 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:34:55.2542 Trace Initializing Layout Renderer: ${level}
+2024-01-30 23:34:55.2542 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:34:55.2542 Trace Initializing Layout Renderer: ${longdate}
+2024-01-30 23:34:55.2542 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-30 23:34:55.2688 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2688 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-30 23:34:55.2688 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:34:55.2688 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-30 23:34:55.2688 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2688 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-30 23:34:55.2688 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2688 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-30 23:34:55.2688 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:34:55.2688 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-30 23:34:55.2688 Trace Initializing Layout Renderer: ${literal}
+2024-01-30 23:34:55.2688 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-30 23:34:55.2688 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-30 23:34:55.2688 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-30 23:34:55.2688 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-30 23:34:55.2688 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2688 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-30 23:34:55.2688 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-30 23:34:55.2688 Trace Initializing FileTarget(Name=logfile)
+2024-01-30 23:34:55.2688 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-30 23:34:55.2688 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-30 23:34:55.2688 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-30 23:34:55.2688 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-30 23:34:55.2688 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-30 23:34:55.2688 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-30 23:34:55.2688 Info Configuration initialized.
+2024-01-30 23:35:04.6024 Debug Targets configured when LogLevel >= Debug for Logger: DapperWithDotNetCoreWebAPI.Service.LoggerManager
+2024-01-30 23:35:04.6024 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Debug] => logfile
+2024-01-30 23:35:04.6024 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Info] => logfile
+2024-01-30 23:35:04.6024 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Warn] => logfile
+2024-01-30 23:35:04.6024 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Error] => logfile
+2024-01-30 23:35:04.6024 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Fatal] => logfile
+2024-01-30 23:35:04.6136 Debug FileTarget(Name=logfile): Preparing for new file: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt'
+2024-01-30 23:35:04.6136 Debug FileTarget(Name=logfile): Creating file appender: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt'
+2024-01-30 23:35:04.6136 Trace FileTarget(Name=logfile): Opening D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-30_logfile.txt with allowFileSharedWriting=False
+2024-01-31 00:14:58.3981 Debug Message Template Auto Format enabled
+2024-01-31 00:14:58.4483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4483 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:14:58.4483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4483 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:14:58.4483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4483 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:14:58.4483 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4483 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:14:58.4483 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:14:58.4483 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:14:58.4483 Trace ParseRulesElement
+2024-01-31 00:14:58.4641 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-31 00:14:58.4641 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-31 00:14:58.4641 Debug --- NLog configuration dump ---
+2024-01-31 00:14:58.4641 Debug Targets:
+2024-01-31 00:14:58.4641 Debug FileTarget(Name=logfile)
+2024-01-31 00:14:58.4641 Debug Rules:
+2024-01-31 00:14:58.4641 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-31 00:14:58.4641 Debug --- End of NLog configuration dump ---
+2024-01-31 00:14:58.4641 Trace FindReachableObject<System.Object>:
+2024-01-31 00:14:58.4641 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-31 00:14:58.4641 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-31 00:14:58.4641 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:14:58.4641 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:14:58.4641 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:14:58.4641 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:14:58.4721 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:14:58.4721 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:14:58.4721 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:14:58.4721 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:14:58.4721 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:14:58.4721 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:14:58.4721 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:14:58.4721 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-31 00:14:58.4721 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-31 00:14:58.4721 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-31 00:14:58.4721 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-31 00:14:58.4721 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${message}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${level}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${longdate}
+2024-01-31 00:14:58.4721 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-31 00:14:58.4721 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4721 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:14:58.4721 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:14:58.4721 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:14:58.4721 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:14:58.4721 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-31 00:14:58.4721 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:14:58.4721 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-31 00:14:58.4721 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:14:58.4721 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:14:58.4721 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:14:58.4721 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:14:58.4721 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:14:58.4721 Trace Initializing FileTarget(Name=logfile)
+2024-01-31 00:14:58.4721 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-31 00:14:58.4721 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:14:58.4721 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:14:58.4721 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:14:58.4721 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-31 00:14:58.4721 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-31 00:14:58.4721 Info Configuration initialized.
+2024-01-31 00:15:44.6168 Debug Message Template Auto Format enabled
+2024-01-31 00:15:44.6629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6629 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:15:44.6629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6629 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:15:44.6629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6629 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:15:44.6629 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6629 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:15:44.6629 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:15:44.6629 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:15:44.6629 Trace ParseRulesElement
+2024-01-31 00:15:44.6777 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-31 00:15:44.6777 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-31 00:15:44.6777 Debug --- NLog configuration dump ---
+2024-01-31 00:15:44.6777 Debug Targets:
+2024-01-31 00:15:44.6777 Debug FileTarget(Name=logfile)
+2024-01-31 00:15:44.6777 Debug Rules:
+2024-01-31 00:15:44.6777 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-31 00:15:44.6777 Debug --- End of NLog configuration dump ---
+2024-01-31 00:15:44.6777 Trace FindReachableObject<System.Object>:
+2024-01-31 00:15:44.6777 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-31 00:15:44.6777 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-31 00:15:44.6777 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:15:44.6777 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:15:44.6777 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:15:44.6777 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:15:44.6777 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6777 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:15:44.6777 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6777 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:15:44.6777 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:15:44.6777 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:15:44.6777 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:15:44.6777 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6777 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:15:44.6777 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6777 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:15:44.6777 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-31 00:15:44.6777 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-31 00:15:44.6777 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-31 00:15:44.6777 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-31 00:15:44.6922 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${message}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${level}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${longdate}
+2024-01-31 00:15:44.6922 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-31 00:15:44.6922 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6922 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:15:44.6922 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:15:44.6922 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:15:44.6922 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6922 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:15:44.6922 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6922 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-31 00:15:44.6922 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:15:44.6922 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-31 00:15:44.6922 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:15:44.6922 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:15:44.6922 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:15:44.6922 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6922 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:15:44.6922 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:15:44.6922 Trace Initializing FileTarget(Name=logfile)
+2024-01-31 00:15:44.6922 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-31 00:15:44.6922 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:15:44.6922 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:15:44.6922 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:15:44.6922 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-31 00:15:44.6922 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-31 00:15:44.6922 Info Configuration initialized.
+2024-01-31 00:25:12.2635 Debug Targets configured when LogLevel >= Debug for Logger: DapperWithDotNetCoreWebAPI.Service.LoggerManager
+2024-01-31 00:25:12.2635 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Debug] => logfile
+2024-01-31 00:25:12.2635 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Info] => logfile
+2024-01-31 00:25:12.2635 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Warn] => logfile
+2024-01-31 00:25:12.2635 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Error] => logfile
+2024-01-31 00:25:12.2635 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Fatal] => logfile
+2024-01-31 00:25:12.2757 Debug FileTarget(Name=logfile): Preparing for new file: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt'
+2024-01-31 00:25:12.2757 Debug FileTarget(Name=logfile): Creating file appender: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt'
+2024-01-31 00:25:12.2757 Trace FileTarget(Name=logfile): Opening D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt with allowFileSharedWriting=False
+2024-01-31 00:26:10.3519 Debug Message Template Auto Format enabled
+2024-01-31 00:26:10.3998 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.3998 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:26:10.3998 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.3998 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:26:10.3998 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.3998 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:26:10.3998 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.3998 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:26:10.3998 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:26:10.3998 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:26:10.3998 Trace ParseRulesElement
+2024-01-31 00:26:10.4161 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-31 00:26:10.4161 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-31 00:26:10.4161 Debug --- NLog configuration dump ---
+2024-01-31 00:26:10.4161 Debug Targets:
+2024-01-31 00:26:10.4161 Debug FileTarget(Name=logfile)
+2024-01-31 00:26:10.4161 Debug Rules:
+2024-01-31 00:26:10.4161 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-31 00:26:10.4161 Debug --- End of NLog configuration dump ---
+2024-01-31 00:26:10.4161 Trace FindReachableObject<System.Object>:
+2024-01-31 00:26:10.4161 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-31 00:26:10.4161 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-31 00:26:10.4161 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:26:10.4161 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:26:10.4161 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:26:10.4161 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:26:10.4161 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4161 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:26:10.4161 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:26:10.4252 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:26:10.4252 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:26:10.4252 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:26:10.4252 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:26:10.4252 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:26:10.4252 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-31 00:26:10.4252 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-31 00:26:10.4252 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-31 00:26:10.4252 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-31 00:26:10.4252 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${message}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${level}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${longdate}
+2024-01-31 00:26:10.4252 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-31 00:26:10.4252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.4252 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:26:10.4252 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:26:10.4252 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:26:10.4252 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:26:10.4252 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-31 00:26:10.4252 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:26:10.4252 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-31 00:26:10.4252 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:26:10.4252 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:26:10.4252 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:26:10.4252 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:26:10.4252 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:26:10.4252 Trace Initializing FileTarget(Name=logfile)
+2024-01-31 00:26:10.4252 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-31 00:26:10.4252 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:26:10.4252 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:26:10.4252 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:26:10.4252 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-31 00:26:10.4413 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-31 00:26:10.4413 Info Configuration initialized.
+2024-01-31 00:28:23.1561 Debug Message Template Auto Format enabled
+2024-01-31 00:28:23.2192 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2192 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:28:23.2236 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2236 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:28:23.2236 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2236 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:28:23.2236 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2236 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:28:23.2236 Debug Adding target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:28:23.2236 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-31 00:28:23.2236 Trace ParseRulesElement
+2024-01-31 00:28:23.2406 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-31 00:28:23.2406 Debug Start watching file-filter 'nlog.config' in directory: D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI
+2024-01-31 00:28:23.2406 Debug --- NLog configuration dump ---
+2024-01-31 00:28:23.2406 Debug Targets:
+2024-01-31 00:28:23.2406 Debug FileTarget(Name=logfile)
+2024-01-31 00:28:23.2406 Debug Rules:
+2024-01-31 00:28:23.2406 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2024-01-31 00:28:23.2406 Debug --- End of NLog configuration dump ---
+2024-01-31 00:28:23.2406 Trace FindReachableObject<System.Object>:
+2024-01-31 00:28:23.2406 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2024-01-31 00:28:23.2406 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-01-31 00:28:23.2406 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:28:23.2406 Trace   Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:28:23.2406 Trace   Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:28:23.2406 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:28:23.2406 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2406 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:28:23.2406 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2406 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:28:23.2406 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:28:23.2406 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:28:23.2406 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:28:23.2406 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2406 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:28:23.2406 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2406 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:28:23.2406 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-01-31 00:28:23.2406 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-01-31 00:28:23.2551 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Source\T\DapperWithDotNetCoreWebAPI\DapperWithDotNetCoreWebAPI\nlog.config
+2024-01-31 00:28:23.2551 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2024-01-31 00:28:23.2551 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${message}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${level}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${longdate}
+2024-01-31 00:28:23.2551 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-01-31 00:28:23.2551 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2551 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-01-31 00:28:23.2551 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:28:23.2551 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-01-31 00:28:23.2551 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2551 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-01-31 00:28:23.2551 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2551 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${shortdate}
+2024-01-31 00:28:23.2551 Trace Initializing Layout Renderer: ${literal}
+2024-01-31 00:28:23.2551 Trace Initializing D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt
+2024-01-31 00:28:23.2551 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-01-31 00:28:23.2551 Trace Scanning SimpleLayout 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt'
+2024-01-31 00:28:23.2551 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-01-31 00:28:23.2551 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2551 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-01-31 00:28:23.2551 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-01-31 00:28:23.2551 Trace Initializing FileTarget(Name=logfile)
+2024-01-31 00:28:23.2551 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-01-31 00:28:23.2551 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2024-01-31 00:28:23.2551 Trace  Scanning Property FileName 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/${shortdate}_logfile.txt' NLog.Layouts.Layout
+2024-01-31 00:28:23.2551 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-01-31 00:28:23.2551 Trace FileTarget(Name=logfile) has 2 layouts
+2024-01-31 00:28:23.2551 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-01-31 00:28:23.2551 Info Configuration initialized.
+2024-01-31 00:28:37.9823 Debug Targets configured when LogLevel >= Debug for Logger: DapperWithDotNetCoreWebAPI.Service.LoggerManager
+2024-01-31 00:28:37.9823 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Debug] => logfile
+2024-01-31 00:28:37.9823 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Info] => logfile
+2024-01-31 00:28:37.9823 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Warn] => logfile
+2024-01-31 00:28:37.9823 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Error] => logfile
+2024-01-31 00:28:37.9823 Debug Logger DapperWithDotNetCoreWebAPI.Service.LoggerManager [Fatal] => logfile
+2024-01-31 00:28:37.9929 Debug FileTarget(Name=logfile): Preparing for new file: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt'
+2024-01-31 00:28:37.9929 Debug FileTarget(Name=logfile): Creating file appender: 'D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt'
+2024-01-31 00:28:37.9929 Trace FileTarget(Name=logfile): Opening D:/Source/T/DapperWithDotNetCoreWebAPI/DapperWithDotNetCoreWebAPI/logs/2024-01-31_logfile.txt with allowFileSharedWriting=False

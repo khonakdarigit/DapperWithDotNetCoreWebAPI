@@ -21,6 +21,7 @@ namespace DapperWithDotNetCoreWebAPI.Controllers
             _logger = logger;
             _companyRepo = companyRepo;
         }
+
         // GET: api/<CompaniesController>
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -53,7 +54,27 @@ namespace DapperWithDotNetCoreWebAPI.Controllers
         }
 
         // GET api/<CompaniesController>/5
-        [HttpGet("ByEmployeeId/{id}")]
+        [HttpGet("{id}/MultipleResultWithEmployee")]
+        public async Task<IActionResult> MultipleResultWithEmployee(int id)
+        {
+            try
+            {
+                var company = await _companyRepo.GetCompanyEmployeesMultipleResults(id);
+                if (company == null)
+                    return NotFound();
+
+                _logger.LogInfo($"Get Company wit Employee {company.Id}");
+
+                return Ok(company);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        // GET api/<CompaniesController>/5
+        [HttpGet("{id}/ByEmployeeId")]
         public async Task<IActionResult> ByEmployeeId(int id)
         {
             try
@@ -81,6 +102,17 @@ namespace DapperWithDotNetCoreWebAPI.Controllers
             _logger.LogInfo($"Insert Company {createdCompany.Id}");
 
             return Ok(createdCompany);
+        }
+
+        // POST api/<CompaniesController>
+        [HttpPost("CreateMultipleCompanies")]
+        public async Task<IActionResult> Post([FromBody] List<CompanyForCreationDto> value)
+        {
+            await _companyRepo.CreateMultipleCompanies(value);
+
+            _logger.LogInfo($"Insert {value.Count} Companies");
+
+            return Ok(value.Count);
         }
 
         // PUT api/<CompaniesController>/5

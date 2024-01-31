@@ -3,6 +3,7 @@ using DapperWithDotNetCoreWebAPI.Contract;
 using DapperWithDotNetCoreWebAPI.Dto;
 using DapperWithDotNetCoreWebAPI.Entitis;
 using System.Data;
+using System.Linq;
 
 namespace DapperWithDotNetCoreWebAPI.Repository
 {
@@ -17,7 +18,8 @@ namespace DapperWithDotNetCoreWebAPI.Repository
 
         public async Task<Company> CreateCompany(CompanyForCreationDto company)
         {
-            var query = "INSERT INTO Companies (Name, Address, Country) VALUES (@Name, @Address, @Country)" +
+            var query =
+                "INSERT INTO Companies (Name, Address, Country) VALUES (@Name, @Address, @Country)" +
                 "SELECT CAST(SCOPE_IDENTITY() as int)";
 
             var parameters = new DynamicParameters();
@@ -32,7 +34,7 @@ namespace DapperWithDotNetCoreWebAPI.Repository
                 var createdCompany = new Company
                 {
                     Id = id,
-                    CompanyName = company.Name,
+                    Name = company.Name,
                     Address = company.Address,
                     Country = company.Country
                 };
@@ -44,6 +46,7 @@ namespace DapperWithDotNetCoreWebAPI.Repository
         public async Task DeleteCompany(int id)
         {
             var query = "DELETE FROM Companies WHERE Id = @Id";
+
             using (var connection = _context.CreateConnection())
             {
                 await connection.ExecuteAsync(query, new { id });
@@ -52,7 +55,7 @@ namespace DapperWithDotNetCoreWebAPI.Repository
 
         public async Task<IEnumerable<Company>> GetCompanies()
         {
-            var query = "SELECT Id,Name as CompanyName,Address,Country FROM Companies";
+            var query = "SELECT * FROM Companies";
 
             using (var connection = _context.CreateConnection())
             {
@@ -63,7 +66,7 @@ namespace DapperWithDotNetCoreWebAPI.Repository
 
         public async Task<Company> GetCompany(int id)
         {
-            var query = "SELECT Id,Name as CompanyName,Address,Country FROM Companies WHERE Id=@Id";
+            var query = "SELECT * FROM Companies WHERE Id=@Id";
 
             using (var connection = _context.CreateConnection())
             {
@@ -72,7 +75,7 @@ namespace DapperWithDotNetCoreWebAPI.Repository
             }
         }
 
-  
+
 
         public async Task UpdateCompany(int id, CompanyForUpdateDto company)
         {
@@ -90,9 +93,10 @@ namespace DapperWithDotNetCoreWebAPI.Repository
             }
         }
 
-        public async Task<Company> GetCompanyByEmployeeId(int id)
+        public async Task<Company?> GetCompanyByEmployeeId(int id)
         {
             var procedureName = "Procedure_ShowCompanyForProvidedEmployeeId";
+
             var parameters = new DynamicParameters();
             parameters.Add("Id", id, DbType.Int32, ParameterDirection.Input);
 
@@ -103,6 +107,73 @@ namespace DapperWithDotNetCoreWebAPI.Repository
                 return company;
             }
 
+        }
+
+        public async Task<Company?> GetCompanyEmployeesMultipleResults(int id)
+        {
+            var query =
+                $"SELECT * FROM Companies WHERE Id = @Id" +
+                $"SELECT * FROM Employees WHERE CompanyId = @Id";
+
+            using (var connection = _context.CreateConnection())
+            using (var multi = await connection.QueryMultipleAsync(query, new { id }))
+            {
+                var company = await multi.ReadSingleOrDefaultAsync<Company>();
+                if (company != null)
+                {
+                    company.Employees = (await multi.ReadAsync<Employee>()).ToList();
+                }
+                return company;
+            }
+        }
+
+        public async Task<List<Company>> GetCompaniesEmployeesMultipleMapping()
+        {
+            var query = "SELECT * FROM Companies c JOIN Employees e ON c.Id=e.CompanyId";
+
+            using (var connection = _context.CreateConnection())
+            {
+                var companyDict = new Dictionary<int, Company>();
+                var companies = await connection.QueryAsync<Company, Employee, Company>(
+                        query, (company, employee) =>
+                        {
+                            if (!companyDict.TryGetValue(company.Id, out var currentCompany))
+                            {
+                                currentCompany = company;
+                                companyDict.Add(company.Id, currentCompany);
+                            }
+
+                            currentCompany.Employees.Add(employee);
+                            return currentCompany;
+                        }
+                    );
+                return companies.Distinct().ToList();
+            }
+        }
+
+        public async Task CreateMultipleCompanies(List<CompanyForCreationDto> companies)
+        {
+            var query =
+               "INSERT INTO Companies (Name, Address, Country) VALUES (@Name, @Address, @Country)";
+
+            using (var connection = _context.CreateConnection())
+            {
+                connection.Open();
+
+                using (var transaction = connection.BeginTransaction())
+                {
+                    foreach (var company in companies)
+                    {
+                        var parameters = new DynamicParameters();
+                        parameters.Add("Name", company.Name, DbType.String);
+                        parameters.Add("Address", company.Address, DbType.String);
+                        parameters.Add("Country", company.Country, DbType.String);
+
+                        await connection.ExecuteAsync(query, parameters, transaction: transaction);
+                    }
+                    transaction.Commit();
+                }
+            }
         }
     }
 }
